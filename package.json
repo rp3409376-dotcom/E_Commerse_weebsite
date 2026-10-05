@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "concurrently --kill-others --names backend,frontend \"npm --prefix backend run dev\" \"wait-on http://localhost:5001/ && npm --prefix frontend run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "wait-on": "^8.0.3"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.5",
+    "tailwindcss": "^4.3.3"
+  }
+}
